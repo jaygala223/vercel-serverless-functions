@@ -2,6 +2,8 @@ import telebot
 import os
 from threading import Thread
 from dotenv import load_dotenv
+from app import keep_alive
+
 
 load_dotenv()
 
