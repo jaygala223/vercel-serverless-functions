@@ -4,7 +4,6 @@ from threading import Thread
 from dotenv import load_dotenv
 from app import keep_alive
 
-
 load_dotenv()
 
 TELEGRAM_BOT_KEY = os.getenv('TELEGRAM_BOT_KEY')
@@ -17,4 +16,5 @@ print(bot)
 def greet(message):
     bot.send_message(message.chat.id, "Hello")
 
+keep_alive()
 bot.polling()
